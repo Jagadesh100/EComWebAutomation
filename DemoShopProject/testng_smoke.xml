@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+	<listeners>
+		<listener class-name="com.demoshop.utilities.ListenerClass"></listener>
+	</listeners>
+  <test thread-count="5" name="Smoke Testing">
+	<parameter name="browser" value="Chrome"></parameter>
+	<groups>
+	<run>
+		<include name="Smoke"></include>
+	</run>
+	</groups>
+    <classes>
+      <class name="com.demoshop.testcases.EndToEndTest"/>
+      <class name="com.demoshop.testcases.RegisterPageTest"/>
+      <class name="com.demoshop.testcases.ShoppingcartPageTest"/>
+      <class name="com.demoshop.testcases.AddToCartPageTest"/>
+      <class name="com.demoshop.testcases.HomePageTest"/>
+      <class name="com.demoshop.testcases.LoginPageTest"/>
+      <class name="com.demoshop.testcases.SearchResultPageTest"/>
+    </classes>
+  </test> <!-- Test_All -->
+</suite> <!-- Suite -->

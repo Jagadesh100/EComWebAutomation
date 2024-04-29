@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowser Testing">
+	<listeners>
+		<listener class-name="com.demoshop.utilities.ListenerClass"></listener>
+	</listeners>
+  <test name="ChromeBrowserTest">
+	<parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="com.demoshop.testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- ChromeTest -->
+  <test name="EdgeBrowserTest">
+	<parameter name="browser" value="Edge"></parameter>
+    <classes>
+      <class name="com.demoshop.testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- EdgeTest -->
+</suite> <!-- Suite -->

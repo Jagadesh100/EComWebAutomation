@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Smoke Testing(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.demoshop.testcases.SearchResultPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="productAvailabilityTest"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.demoshop.testcases.SearchResultPageTest -->
+      <class name="com.demoshop.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="loginTest" invocation-numbers="0 1"/>
+          <include name="setUp"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.demoshop.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Smoke Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->

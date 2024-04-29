@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite for Testing All cases">
+  <listeners>
+	<listener class-name="com.demoshop.utilities.ListenerClass"></listener>
+  </listeners>
+  <test thread-count="5" name="Test_All">
+	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.demoshop.testcases.RegisterPageTest"/>
+      <class name="com.demoshop.testcases.LoginPageTest"/>
+      <class name="com.demoshop.testcases.HomePageTest"/>
+      <class name="com.demoshop.testcases.SearchResultPageTest"/>
+      <class name="com.demoshop.testcases.AddToCartPageTest"/>
+      <class name="com.demoshop.testcases.ShoppingcartPageTest"/>
+      <class name="com.demoshop.testcases.EndToEndTest"/>
+    </classes>
+  </test> <!-- Test_All -->
+</suite> <!-- Suite -->
